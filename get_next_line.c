@@ -6,7 +6,7 @@
 /*   By: jihybang <jihybang@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 16:42:23 by jihybang          #+#    #+#             */
-/*   Updated: 2023/06/12 21:49:30 by jihybang         ###   ########.fr       */
+/*   Updated: 2023/06/12 21:53:00 by jihybang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char	*get_next_line(int fd)
 	line = make_line(fd, save, buff, 1);
 	free(buff);
 	buff = NULL;
-	if (line == NULL || *line == '\0')
+	if (line == NULL)
 		return (NULL);
 	save = make_backup(line);
 	return (line);
